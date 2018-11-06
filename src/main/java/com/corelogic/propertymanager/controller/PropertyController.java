@@ -39,7 +39,6 @@ public class PropertyController {
     @RequestMapping("/showProperties")
     public ResponseEntity<Object> showProperties(@RequestParam("pageNum") int pageNum){
 
-        System.out.println (this.paginationSize);
         try {
             Page<Property> propertiesPage = propertyService.getProperties(pageNum, this.paginationSize);
             if(propertiesPage.getTotalElements() == 0)
