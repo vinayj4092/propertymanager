@@ -9,8 +9,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 /**
  * This class represents the PropertyService through which the Property details can be fetched or added.
  */
@@ -60,7 +58,7 @@ public class PropertyServiceImpl implements PropertyService {
     public Page<Property> getProperties(int pageNum, int pageSize) {
 
         // PageRequest object is created to handle the Pagination logic
-        PageRequest pageRequest = new PageRequest(pageNum, pageSize, Sort.Direction.ASC, "PurchaseValue");
+        PageRequest pageRequest = new PageRequest(pageNum, pageSize, Sort.Direction.DESC, "PurchaseValue");
         return propertyRepository.findAll(pageRequest);
     }
 }

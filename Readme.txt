@@ -14,6 +14,13 @@ EndPoints
      Method :- POST
      http://localhost:8080/newProperty
 
+     sample payload
+     {
+         "address": " Auckland",
+         "purchaseDate": "2018/11/02",
+         "purchaseValue": 200
+     }
+
      Description :- Updates a specified property ID
      Method :- PUT
      http://localhost:8080/updateProperty/{property id to be updated}

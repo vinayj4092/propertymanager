@@ -1,10 +1,6 @@
 package com.corelogic.propertymanager.entities;
 
-import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.NotEmpty;
-
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 
 /**
  * This class is an entity and represents the Property table in the Database

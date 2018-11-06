@@ -4,8 +4,6 @@ import com.corelogic.propertymanager.entities.Property;
 import com.corelogic.propertymanager.utilities.PropertyNotFoundExcception;
 import org.springframework.data.domain.Page;
 
-import java.util.List;
-
 /**
  * This interface represents the services to be exposed by PropertyService implementation, through which the Property details can be fetched or added.
  */

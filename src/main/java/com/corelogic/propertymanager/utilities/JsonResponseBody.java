@@ -1,6 +1,8 @@
 package com.corelogic.propertymanager.utilities;
 
-
+/**
+ * This class encapsulates the response code and response back to the client
+ */
 public class JsonResponseBody {
 
     private  int responseCode;
